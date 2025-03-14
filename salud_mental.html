@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salud Mental</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome via CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body class="bg-gradient-to-r from-purple-800 via-indigo-800 to-blue-900 text-white font-sans">
+    <header class="bg-gradient-to-r from-purple-800 via-indigo-800 to-blue-900 text-white p-4 shadow-lg flex justify-between items-center rounded-b-xl">
+        <!-- Logo y Título -->
+        <div class="flex items-center gap-4">
+            <img src="salud_mental.png" alt="Logo" class="h-20 w-20 rounded-full"> 
+            <div>
+                <h1 class="text-3xl font-bold">Salud Mental y Bienestar</h1>
+                <p class="text-gray-300 text-sm">Cuidado y equilibrio para tu mente y cuerpo.</p>
+            </div>
+        </div>
+    
+        <!-- Botón de Salida -->
+        <a href="index.html" class="flex items-center px-4 py-2 bg-red-600 hover:bg-red-700 transition-all duration-300 text-white font-semibold rounded-lg shadow-md">
+            <i class="fas fa-sign-out-alt mr-2"></i> Salir
+        </a>
+    </header>
+    
+
+   <!-- Frases Motivacionales -->
+    <section class="text-center py-10">
+        <h2 class="text-3xl font-semibold text-white">Frases Motivacionales</h2>
+        <div class="bg-white p-6 rounded-lg shadow-md max-w-lg mx-auto mt-4">
+            <p id="motivationalText" class="text-lg font-semibold text-gray-800">
+                "Sé amable contigo mismo, cada día es un nuevo comienzo."
+            </p>
+            <button id="generatePhraseBtn" class="mt-4 px-4 py-2 bg-purple-600 text-white rounded-lg hover:bg-purple-700">
+                Generar Frase
+            </button>
+        </div>
+    </section>
+
+
+    <!-- Música Relajante -->
+    <section class="text-center bg-gray-900 py-10 text-white">
+        <h2 class="text-3xl font-semibold">Música para iniciar el día</h2>
+        <div class="mt-4 flex justify-center gap-3">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/WB_YR69JZto" 
+                title="YouTube video player" frameborder="0" allow="autoplay; encrypted-media" loading="lazy"  allowfullscreen>
+            </iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/RF0HhrwIwp0" 
+                title="YouTube video player" frameborder="0" allow="autoplay; encrypted-media" loading="lazy"  allowfullscreen>
+            </iframe>
+        </div>
+    </section>
+
+    <!-- Diario Personal -->
+    <section class="py-10">
+        <h2 class="text-3xl font-semibold text-center text-black">Diario Personal</h2>
+        <div class="max-w-3xl mx-auto">
+            <textarea id="diary" rows="5" class="text-black w-full p-4 mt-4 border border-gray-300 rounded-lg focus:outline-none" placeholder="Escribe aquí..."></textarea>
+            <button onclick="saveDiaryEntry()" class="mt-4 bg-purple-600 text-white px-6 py-2 rounded-lg hover:bg-purple-700">
+                Guardar
+            </button>
+        </div>
+    </section>
+
+    <!-- Zona de Videos Motivacionales -->
+    <!-- <section class="py-10 text-center">
+        <h2 class="text-3xl font-semibold">Videos Motivacionales</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-6">
+            <iframe class="w-full h-40" src="https://www.youtube.com/embed/ZXtZtiAamgU" allowfullscreen></iframe>
+            <iframe class="w-full h-64" src="https://www.youtube.com/embed/UBS2CyrhC5U" allowfullscreen></iframe>
+            <iframe class="w-full h-64" src="https://www.youtube.com/embed/W_5OcbB5tsE" allowfullscreen></iframe>
+        </div>
+    </section> -->
+
+
+   
+    <script src="funciones.js"></script>
+</body>
+</html>
